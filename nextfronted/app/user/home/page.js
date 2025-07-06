@@ -138,21 +138,21 @@ export default function Home() {
         </div>
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div className={`bg-white ${isDarkMode ? "border-gray-700 text-gray-300" : "border-gray-200 text-gray-600"} p-6 rounded-lg shadow-md border`}>
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">{t.about}</h3>
-          <p>{t.aboutDesc}</p>
+        <div className={`bg-white ${isDarkMode ? "bg-gray-800 border-gray-700" : "border-gray-200"} p-6 rounded-lg shadow-none border`}>
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-600 mb-2">{t.about}</h3>
+          <p className={`text-gray-600 ${isDarkMode ? "text-gray-100" : ""} leading-relaxed`}>{t.aboutDesc}</p>
         </div>
-        <div className={`bg-white ${isDarkMode ? "border-gray-700 text-gray-300" : "border-gray-200 text-gray-600"} p-6 rounded-lg shadow-md border`}>
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">{t.services}</h3>
-          <p>{t.servicesDesc}</p>
+        <div className={`bg-white ${isDarkMode ? "bg-gray-800 border-gray-700" : "border-gray-200"} p-6 rounded-lg shadow-none border`}>
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-600 mb-2">{t.services}</h3>
+          <p className={`text-gray-600 ${isDarkMode ? "text-gray-100" : ""} leading-relaxed`}>{t.servicesDesc}</p>
         </div>
-        <div className={`bg-white ${isDarkMode ? "border-gray-700 text-gray-300" : "border-gray-200 text-gray-600"} p-6 rounded-lg shadow-md border`}>
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">{t.projects}</h3>
-          <p>{t.projectsDesc}</p>
+        <div className={`bg-white ${isDarkMode ? "bg-gray-800 border-gray-700" : "border-gray-200"} p-6 rounded-lg shadow-none border`}>
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-600 mb-2">{t.projects}</h3>
+          <p className={`text-gray-600 ${isDarkMode ? "text-gray-100" : ""} leading-relaxed`}>{t.projectsDesc}</p>
         </div>
-        <div className={`bg-white ${isDarkMode ? "border-gray-700 text-gray-300" : "border-gray-200 text-gray-600"} p-6 rounded-lg shadow-md border`}>
-          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-2">{t.contact}</h3>
-          <p>{t.contactDesc}</p>
+        <div className={`bg-white ${isDarkMode ? "bg-gray-800 border-gray-700" : "border-gray-200"} p-6 rounded-lg shadow-none border`}>
+          <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-600 mb-2">{t.contact}</h3>
+          <p className={`text-gray-600 ${isDarkMode ? "text-gray-100" : ""} leading-relaxed`}>{t.contactDesc}</p>
         </div>
       </div>
     </div>

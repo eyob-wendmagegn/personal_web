@@ -20,8 +20,10 @@ export default function LoginPage() {
     try {
       const response = await axios.post("http://localhost:5000/api/login", credentials);
       if (response.data.email === "eyobwende18@gmail.com") {
+        localStorage.setItem("userEmail", "eyobwende18@gmail.com"); // Store admin email
         router.push("/admin/home");
       } else if (response.data.message === "Login successful") {
+        localStorage.setItem("userEmail", credentials.email); // Store user email
         router.push("/user/home");
       }
     } catch (error) {
@@ -81,7 +83,7 @@ export default function LoginPage() {
         </div>
         <button
           onClick={toggleDarkMode}
-          className="bg-gray-900 dark:bg-gray-700 text-white border-2 border-gradient-rainbow rounded-lg p-2 hover:rotate-180. transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-indigo-800"
+          className="bg-gray-900 dark:bg-gray-700 text-white border-2 border-gradient-rainbow rounded-lg p-2 hover:rotate-180 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-indigo-800"
           style={{
             background: "linear-gradient(45deg, #ff0000, #ff8000, #ffff00, #00ff00, #00ffff, #0000ff, #8000ff)",
             animation: "rainbow 5s linear infinite",

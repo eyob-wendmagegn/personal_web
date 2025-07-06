@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useTheme } from '../../../context/ThemeContext';
 import axios from 'axios';
@@ -104,13 +104,13 @@ export default function AdminHome() {
           <textarea
             value={content}
             onChange={(e) => setContent(e.target.value)}
-            className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200"
+            className="w-full p-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-200"
             placeholder={t.placeholder}
             rows="4"
           />
           <button
             type="submit"
-            className="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-green-700 dark:hover:bg-green-800"
           >
             {t.submit}
           </button>
