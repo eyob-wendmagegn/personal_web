@@ -2,3 +2,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom dark mode styles */
+@layer base {
+    body {
+        @apply bg-gray-100 text-gray-900 min-h-screen flex flex-col transition-colors duration-300;
+    }
+
+    body.dark {
+        @apply bg-gray-900 text-gray-100;
+    }
+
+    /* Ensure input fields and buttons adapt to dark mode */
+    input,
+    button {
+        @apply transition-colors duration-300;
+    }
+
+    input.dark,
+    button.dark {
+        @apply bg-gray-700 text-gray-200 border-gray-600;
+    }
+
+    input:focus,
+    button:focus {
+        @apply outline-none ring-2 ring-blue-500;
+    }
+
+    [data-hydrating] body {
+        /* Prevent transition during hydration */
+        transition: none !important;
+    }
+}

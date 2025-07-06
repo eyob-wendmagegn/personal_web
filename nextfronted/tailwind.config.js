@@ -9,9 +9,10 @@ module.exports = {
         primary: {
           600: '#2563eb',
           700: '#1d4ed8',
-        }
-      }
+        },
+      },
     },
   },
+  darkMode: 'class', // Enable class-based dark mode
   plugins: [],
-}
+};
